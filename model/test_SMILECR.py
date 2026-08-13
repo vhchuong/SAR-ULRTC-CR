@@ -7,7 +7,7 @@ from tqdm import tqdm
 from util import pytorch_ssim
 from main_net import SAR_ULRTC_CR_SMILECR as net
 # from dataLoader import SEN12MSCR_0  # Removed unused import SIM_MSCR
-from smilecr_dataset import SMILECRNumpyDataset_1
+from smilecr_dataset import SMILECRNumpyDataset
 import glob
 import matplotlib.pyplot as plt
 from pathlib import Path
