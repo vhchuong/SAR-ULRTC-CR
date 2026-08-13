@@ -227,7 +227,7 @@ The evaluation programs report the following criteria:
 ## Citation
 
 ```bibtex
-@article{vo2026unrolled,
+@article{sar-ulrtc-cr,
   author  = {Vo, Chuong Hoang and Lee, Chul},
   title   = {Unrolled Low-Rank Tensor Completion for SAR-Guided Cloud Removal in Multispectral Images},
   journal = {IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
