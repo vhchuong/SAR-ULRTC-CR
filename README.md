@@ -95,7 +95,7 @@ For `--data_mode full`, the train and test directory names end in `_npy_full` in
 There are currently two translated-input conventions in `model/dataLoader.py`:
 
 - `SEN12MSCR_0`, used by training, reads PNG files from `SEN12MSCR_<split>_translated/` or `SEN12MSCR_<split>_translated_full/`.
-- `SEN12MSCR_1`, referenced by evaluation, reads NPY files from `SEN12MSCR_<split>_translated_partial_npy/` or `SEN12MSCR_<split>_translated_full_npy/`.
+- `SEN12MSCR_1`, used by evaluation, reads NPY files from `SEN12MSCR_<split>_translated_partial_npy/` or `SEN12MSCR_<split>_translated_full_npy/`.
 
 ### SMILE-CR
 
@@ -122,7 +122,7 @@ Sentinel-1_2020-De/      # 2-channel SAR NPY files
 
 ## Training
 
-The following commands reflect the current CLI options. See [Current code status](#current-code-status) before running them.
+The following commands reflect the current CLI options.
 
 ### SEN12MS-CR
 
@@ -199,17 +199,10 @@ Both evaluators report:
 - spectral angle mapper (SAM, in degrees)
 - SSIM
 
-## Current code status
+## Implementation notes
 
-The repository is a research-code snapshot, and the checked-in entrypoints currently have naming inconsistencies that must be resolved before execution:
-
-1. The SEN12MS-CR scripts import `RPCA_Net_4_stages_SAR_Trans_RGB_9`, but `model/main_net.py` defines the corresponding model as `SAR_ULRTC_CR`.
-2. The SMILE-CR scripts import `RPCA_Net_4_stages_SAR_Trans_RGB_SMILECR_9`, but `model/main_net.py` defines the corresponding model as `SAR_ULRTC_CR_SMILECR`.
-3. `model/test_SEN12MSCR.py` instantiates `SEN12MSCR_1` but currently imports only `SEN12MSCR_0`.
-4. The implementation is CUDA-only; CPU execution is not currently supported by the entrypoints or model initialization.
-5. The model `forward` methods accept a direct `SAR` tensor, but the current block calls use the cloudy optical input and translated-image prior; the direct `SAR` argument is not otherwise referenced.
-
-These points describe the repository as checked in; the commands above are the intended workflows once the import names are aligned.
+- The implementation is CUDA-only; CPU execution is not currently supported by the entrypoints or model initialization.
+- The model `forward` methods accept a direct `SAR` tensor, but the current block calls use the cloudy optical input and translated-image prior; the direct `SAR` argument is not otherwise referenced.
 
 ## License
 

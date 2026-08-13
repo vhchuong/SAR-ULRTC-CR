@@ -5,8 +5,8 @@ import argparse
 import numpy as np
 from tqdm import tqdm
 from util import pytorch_ssim
-from main_net import RPCA_Net_4_stages_SAR_Trans_RGB_9 as net
-from dataLoader import SEN12MSCR_0
+from main_net import SAR_ULRTC_CR as net
+from dataLoader import SEN12MSCR_1
 import glob
 import matplotlib.pyplot as plt
 from pathlib import Path
@@ -252,4 +252,3 @@ if __name__ == '__main__':
     if not ckpt_path.exists():
         raise FileNotFoundError(f'Checkpoint file not found: {ckpt_path}')
     metrics = test(opt_args, ckpt_path, opt_args.epoch)
-

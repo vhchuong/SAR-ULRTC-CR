@@ -6,7 +6,7 @@ from torch import mean
 from torch.utils.data.sampler import SubsetRandomSampler
 from tqdm import tqdm
 from torchinfo import summary
-from main_net import RPCA_Net_4_stages_SAR_Trans_RGB_SMILECR_9 as net
+from main_net import SAR_ULRTC_CR_SMILECR as net
 from smilecr_dataset import SMILECRNumpyDataset
 import numpy as np
 from util.pytorch_ssim import ssim

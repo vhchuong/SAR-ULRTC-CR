@@ -5,7 +5,7 @@ import argparse
 import numpy as np
 from tqdm import tqdm
 from util import pytorch_ssim
-from main_net import RPCA_Net_4_stages_SAR_Trans_RGB_SMILECR_9 as net
+from main_net import SAR_ULRTC_CR_SMILECR as net
 # from dataLoader import SEN12MSCR_0  # Removed unused import SIM_MSCR
 from smilecr_dataset import SMILECRNumpyDataset_1
 import glob
