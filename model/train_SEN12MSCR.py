@@ -7,7 +7,7 @@ from torch.utils.data.sampler import SubsetRandomSampler
 from tqdm import tqdm
 from torchinfo import summary
 from main_net import SAR_ULRTC_CR as net
-from dataLoader import SEN12MSCR_0
+from dataLoader import SEN12MSCR_1
 import numpy as np
 from util.pytorch_ssim import ssim
 import visdom
