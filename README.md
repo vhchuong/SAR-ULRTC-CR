@@ -2,7 +2,7 @@
 
 Official PyTorch implementation of the paper:
 
-> Chuong Hoang Vo and Chul Lee, “Unrolled Low-Rank Tensor Completion for SAR-Guided Cloud Removal in Multispectral Images,” *IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing*, pp. 1–18, 2026, doi: [10.1109/JSTARS.2026.3723469](https://doi.org/10.1109/JSTARS.2026.3723469).
+> Chuong Hoang Vo and Chul Lee, “Unrolled Low-Rank Tensor Completion for SAR-Guided Cloud Removal in Multispectral Images,” *IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing*, vol. 19, pp. 27984-28001, 2026, doi: [10.1109/JSTARS.2026.3723469](https://doi.org/10.1109/JSTARS.2026.3723469).
 
 ## Overview
 
@@ -16,7 +16,8 @@ The released pipeline operates on cloudy multispectral observations, Sentinel-1 
 - **Authors:** Chuong Hoang Vo and Chul Lee
 - **Journal:** IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
 - **Year:** 2026
-- **Pages:** 1–18
+- **Volume:** 19
+- **Pages:** 27984-28001
 - **DOI:** [10.1109/JSTARS.2026.3723469](https://doi.org/10.1109/JSTARS.2026.3723469)
 
 If this code or the associated models contribute to your research, please cite the paper using the entry in [Citation](#citation).
@@ -232,7 +233,8 @@ The evaluation programs report the following criteria:
   title   = {Unrolled Low-Rank Tensor Completion for SAR-Guided Cloud Removal in Multispectral Images},
   journal = {IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
   year    = {2026},
-  pages   = {1--18},
+  volume  = {19},
+  pages   = {27984-28001},
   doi     = {10.1109/JSTARS.2026.3723469}
 }
 ```
